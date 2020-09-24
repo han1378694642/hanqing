@@ -6,4 +6,4 @@ Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
-Vue.prototype.$add=Message
+Vue.prototype.$add = Message
