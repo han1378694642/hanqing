@@ -62,7 +62,7 @@
               size="mini"
               @click="removeUserById(scope.row.id)"
             ></el-button>
-            <!-- 分配角色按钮 -->
+            <!-- 分配角色按钮   -->
             <el-tooltip
               effect="dark"
               content="分配角色"
