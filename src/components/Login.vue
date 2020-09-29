@@ -72,7 +72,7 @@ export default {
         if (!valid) return;
         // 解构出data
         // 再组件中直接用 this 发起登录请求，请求地址可以从api接口文档中查找，请求参数loginForm也要提供好
-        // 为了简化post操作，可以用await 和async来进行优化 await只能用在被async修饰得方法中
+        // 为了简化promise操作，可以用await 和async来进行优化 await只能用在被async修饰得方法中
         //把外面的箭头函数修饰成异步函数这样的话我们就可以直接拿到服务器返回的数据，其中返回了6个数据
         // data返回的是真实得数据，所以直接解构出data属性，同时重新命名为res对象
         const {data: res} = await this.$http.post('login',this.loginForm);
